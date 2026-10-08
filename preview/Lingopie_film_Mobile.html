@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lingopie · Promo · 4:5</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23ff8243'/><path d='M12 9v14l11-7z' fill='%23fff'/></svg>">
+<style>
+:root{--bg:#0f0c0f;--panel:#1a151a;--line:#2e262e;--text:#f6efe9;--muted:#a3979f;--accent:#ff8243}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--text);overflow:hidden;font:500 13px/1 Inter,system-ui,sans-serif}
+#root,.app{height:100%}
+.app{display:grid;grid-template-rows:minmax(0,1fr) auto;grid-template-columns:minmax(0,1fr)}
+.stage{min-height:0;min-width:0;container-type:size;display:grid;place-items:center}
+.fit{background:#000}
+.bar{background:var(--panel);border-top:1px solid var(--line);padding:6px 12px 8px}
+.row{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.grow{flex:1}
+button{display:grid;place-items:center;width:34px;height:34px;border:0;border-radius:8px;background:none;color:var(--text);cursor:pointer}
+button:hover{background:var(--line)}
+button.main{background:var(--accent);color:#1a151a}
+button.on{color:var(--accent)}
+.time,.frames{font-variant-numeric:tabular-nums;padding:0 8px;white-space:nowrap}
+.frames{color:var(--muted)}
+select{background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:8px;height:30px;padding:0 6px;font:inherit}
+input[type=range]{-webkit-appearance:none;appearance:none;background:transparent;cursor:pointer;margin:0}
+input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:2px;background:linear-gradient(90deg,var(--accent) var(--p),var(--line) var(--p))}
+input[type=range]::-moz-range-track{height:4px;border-radius:2px;background:linear-gradient(90deg,var(--accent) var(--p),var(--line) var(--p))}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:13px;height:13px;border-radius:50%;background:#fff;margin-top:-4.5px}
+input[type=range]::-moz-range-thumb{width:13px;height:13px;border:0;border-radius:50%;background:#fff}
+.seekbar{width:100%;height:18px;display:block;margin-bottom:4px}
+.vol{width:80px;height:18px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:560px){.frames,.vol{display:none}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>window.ROOT = '../'; window.FORMAT = 'Mobile'; window.MEDIA = 'assets/'; window.FILES = ["audio/mix.wav","clips/A1.mp4","clips/A2.mp4","clips/B.mp4","clips/E1.mp4","clips/E2.mp4","clips/E3.mp4","clips/G.mp4","stills/m01.jpg","stills/m02.jpg","stills/m03.jpg","stills/m04.jpg","stills/m05.jpg","stills/m06.jpg","stills/m07.jpg","stills/m08.jpg","stills/m09.jpg","stills/m10.jpg","stills/m11.jpg","stills/m12.jpg","stills/m13.jpg","stills/m14.jpg","stills/m15.jpg","stills/m16.jpg"];</script>
+<script src="../lib/player.min.js"></script>
+</body>
+</html>
